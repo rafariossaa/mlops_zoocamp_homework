@@ -30,3 +30,17 @@ docker run --name jupyter -p 8888:8888 -v ./app:/app mlops:v0
 - Why MLOps is essential
 - Course structure & environment setup
 
+## 02 - Experiment Tracking
+
+The docker image was updated to install mlflow. Build `v2` and run the image with:
+```bash
+docker run  -it --name jupyter -p 8888:8888 -p 5000:5000 -v ./app:/app mlops:v02
+```
+
+- Install MLflow
+- Download and preprocess the data
+- Train a model with autolog
+- Launch the tracking server locally
+- Tune model hyperparameters
+- Promote the best model to the model registry
+
